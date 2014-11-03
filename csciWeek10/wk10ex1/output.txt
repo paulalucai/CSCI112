@@ -1,0 +1,12 @@
+Enter number: 6
+Enter number: 3
+Enter number: 88
+Enter number: 4
+Enter number: 7
+a[0] is: 6
+a[1] is: 3
+a[2] is: 88
+a[3] is: 4
+a[4] is: 7
+The maximum value is: 88
+This is stored at index number: 4

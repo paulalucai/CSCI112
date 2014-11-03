@@ -1,0 +1,15 @@
+Enter number of items: 1.5
+Enter number of items: 2
+Enter number of items: 7.5
+Enter number of items: 4
+Enter number of items: 5.5
+
+        Items   Price   Amount
+        -----   -----   ------
+         1.50    9.92    14.88
+         2.00    6.50    13.00
+         7.50   12.63    94.73
+         4.00    5.95    23.80
+         5.50   10.29    56.59
+                        ------
+        Total:          203.00

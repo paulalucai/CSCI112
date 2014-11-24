@@ -1,0 +1,15 @@
+Enter the string: Anthony W. Smith
+Enter the string: thin moth yawns
+Anagram
+
+Enter the string: I'll make a wise phrase
+Enter the string: William Shakespeare
+Anagram
+
+Enter the string: Smartest
+Enter the string: Mattress
+Anagram
+
+Enter the string: dumbest
+Enter the string: stumble
+Not Anagram

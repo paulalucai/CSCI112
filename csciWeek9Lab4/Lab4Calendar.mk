@@ -5,18 +5,18 @@
 ## Debug
 ProjectName            :=Lab4Calendar
 ConfigurationName      :=Debug
-WorkspacePath          := "C:\Users\User\Dropbox\csci112\csciWeek9Lab4"
-ProjectPath            := "C:\Users\User\Dropbox\csci112\csciWeek9Lab4"
+WorkspacePath          := "C:\Users\hp\Dropbox\csci112\csciWeek9Lab4"
+ProjectPath            := "C:\Users\hp\Dropbox\csci112\csciWeek9Lab4"
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
-User                   :=User
-Date                   :=10/31/14
-CodeLitePath           :="C:\Program Files\CodeLite"
-LinkerName             :=C:\MinGW-4.8.1\bin\g++.exe 
-SharedObjectLinkerName :=C:\MinGW-4.8.1\bin\g++.exe -shared -fPIC
+User                   :=hp
+Date                   :=11/10/14
+CodeLitePath           :="C:\Program Files (x86)\CodeLite"
+LinkerName             :=C:/MinGW-4.8.1/bin/g++.exe 
+SharedObjectLinkerName :=C:/MinGW-4.8.1/bin/g++.exe -shared -fPIC
 ObjectSuffix           :=.o
 DependSuffix           :=.o.d
 PreprocessSuffix       :=.i
@@ -36,7 +36,7 @@ ObjectsFileList        :="Lab4Calendar.txt"
 PCHCompileFlags        :=
 MakeDirCommand         :=makedir
 RcCmpOptions           := 
-RcCompilerName         :=C:\MinGW-4.8.1\bin\windres.exe 
+RcCompilerName         :=C:/MinGW-4.8.1/bin/windres.exe 
 LinkOptions            :=  
 IncludePath            :=  $(IncludeSwitch). $(IncludeSwitch). 
 IncludePCH             := 
@@ -49,19 +49,19 @@ LibPath                := $(LibraryPathSwitch).
 ## Common variables
 ## AR, CXX, CC, AS, CXXFLAGS and CFLAGS can be overriden using an environment variables
 ##
-AR       := C:\MinGW-4.8.1\bin\ar.exe rcu
-CXX      := C:\MinGW-4.8.1\bin\g++.exe 
-CC       := C:\MinGW-4.8.1\bin\gcc.exe 
+AR       := C:/MinGW-4.8.1/bin/ar.exe rcu
+CXX      := C:/MinGW-4.8.1/bin/g++.exe 
+CC       := C:/MinGW-4.8.1/bin/gcc.exe 
 CXXFLAGS :=  -g -O0 -Wall $(Preprocessors)
 CFLAGS   :=  -g -O0 -Wall $(Preprocessors)
 ASFLAGS  := 
-AS       := C:\MinGW-4.8.1\bin\as.exe 
+AS       := C:/MinGW-4.8.1/bin/as.exe 
 
 
 ##
 ## User defined environment variables
 ##
-CodeLiteDir:=C:\Program Files\CodeLite
+CodeLiteDir:=C:\Program Files (x86)\CodeLite
 UNIT_TEST_PP_SRC_DIR:=C:\UnitTest++-1.3
 Objects0=$(IntermediateDirectory)/main.c$(ObjectSuffix) 
 
@@ -91,7 +91,7 @@ PreBuild:
 ## Objects
 ##
 $(IntermediateDirectory)/main.c$(ObjectSuffix): main.c $(IntermediateDirectory)/main.c$(DependSuffix)
-	$(CC) $(SourceSwitch) "C:/Users/User/Dropbox/csci112/csciWeek9Lab4/main.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.c$(ObjectSuffix) $(IncludePath)
+	$(CC) $(SourceSwitch) "C:/Users/hp/Dropbox/csci112/csciWeek9Lab4/main.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.c$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.c$(DependSuffix): main.c
 	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.c$(ObjectSuffix) -MF$(IntermediateDirectory)/main.c$(DependSuffix) -MM "main.c"
 
@@ -104,9 +104,8 @@ $(IntermediateDirectory)/main.c$(PreprocessSuffix): main.c
 ## Clean
 ##
 clean:
-	$(RM) $(IntermediateDirectory)/main.c$(ObjectSuffix)
-	$(RM) $(IntermediateDirectory)/main.c$(DependSuffix)
-	$(RM) $(IntermediateDirectory)/main.c$(PreprocessSuffix)
+	$(RM) ./Debug/*$(ObjectSuffix)
+	$(RM) ./Debug/*$(DependSuffix)
 	$(RM) $(OutputFile)
 	$(RM) $(OutputFile).exe
 	$(RM) ".build-debug/Lab4Calendar"

@@ -35,18 +35,18 @@ void getMonthYear(int *month, int *year) {
 }
 int toJulian(int month, int year) {
     int count;
-    int days = 0;
+    int julian = 0;
     for(count = 1; count < month; ++count) {
-        days += daysInMonth(count, year);    
+        julian += daysInMonth(count, year);    
     }
-    return days;
+    return julian;
 }
 int daysInMonth(int month, int year) {
 	int numDays;
 	switch (month) {
     case 1: numDays = 31;
     	break;
-    case 2: numDays = 28;
+    case 2: numDays = 28 + leapYear(year);
     	break;
     case 3: numDays = 31;
     	break;
@@ -68,6 +68,13 @@ int daysInMonth(int month, int year) {
     	break;
     case 12: numDays = 31;
     	break;
+	default:
+
+            printf("Bad month param in daysInMonth()");
+
+            exit(1);
+
+            break;
     }
 	return numDays;
 }

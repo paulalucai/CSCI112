@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Session Name="C:\Users\hp\Dropbox\csci112\csciWeek13\sort_stud\sort_stud.workspace">
+  <int Value="0" Name="m_selectedTab"/>
+  <wxString Value="C:\Users\hp\Dropbox\csci112\csciWeek13\sort_stud\sort_stud.workspace" Name="m_workspaceName"/>
+  <TabInfoArray Name="TabInfoArray">
+    <TabInfo>
+      <wxString Value="C:\Users\hp\Dropbox\csci112\csciWeek13\sort_stud\main.c" Name="FileName"/>
+      <int Value="41" Name="FirstVisibleLine"/>
+      <int Value="46" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+  </TabInfoArray>
+  <SerializedObject Name="m_breakpoints">
+    <long Value="0" Name="Count"/>
+  </SerializedObject>
+</Session>
